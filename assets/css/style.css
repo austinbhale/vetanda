@@ -1,8 +1,32 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+.icons li {
+  margin: 2px auto;
+}
+
+.icons a {
+  color: white;
+}
+
+.icons a:hover {
+  color: lightgray;
+}
+
+.icons img, .icons i {
+  width: 25px;
+  height: 24px;
+  vertical-align: bottom;
 }
 
 .fixed-top {
@@ -33,6 +57,12 @@ nav ul li:hover {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+}
+
+.center-fit {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 
 @media only screen and (min-width: 601px) {
