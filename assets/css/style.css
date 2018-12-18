@@ -38,7 +38,7 @@ html, body {
 }
 
 nav ul li:hover {
-  background-color: purple;
+  background-color: grey;
 }
 
 .scrolled {
@@ -119,10 +119,9 @@ nav ul li:hover {
   margin: 0 auto;
 }
 
-.trans {
-  background-position-y: 100%;
-  opacity: 1.0;
-}
+/* .trans {
+  background-position-y: ;
+} */
 
 #parallax-mobile {
   display: none;
@@ -145,3 +144,37 @@ nav ul li:hover {
   width: 100%;
   height: 250px;
 }
+
+.idx-containers {
+  position: relative;
+  height: 400px;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.idx-containers:hover {
+  background-size: 107% 107%;
+}
+
+.about-home {
+  background: url(../images/action.jpg);
+  background-size: 100% 100%;
+}
+
+.media-home {
+  background: url(../images/schedule.jpg);
+  background-size: 100% 100%;
+}
+
+.schedule-home {
+  background: url(../images/action.jpg);
+  background-size: 100% 100%;
+}
+
+.contact-home {
+  background: url(../images/schedule.jpg);
+  background-size: 100% 100%;
+}
+
+

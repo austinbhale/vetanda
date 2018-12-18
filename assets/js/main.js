@@ -2,10 +2,10 @@ window.onscroll = function () {
     
     if ($(window).scrollTop() >= 30 ) {
         $("#nav").removeClass("black");
-        $("#nav").addClass("purple");
+        $("#nav").addClass("grey darken-3");
     } 
     else {
-        $("#nav").removeClass("purple");
+        $("#nav").removeClass("grey darken-3");
         $("#nav").addClass("black");
     }
 };
@@ -41,10 +41,11 @@ $(document).ready(function() {
         $('#parallax-mobile').css("display", "block");
         setTimeout(function() {
             $('#parallax-img').fadeIn(4000);
-        }, 1000);
+        }, 500);
     } else {
         setTimeout(function() {
-            $('#parallax-container').addClass('trans');
+            $('#parallax-container').animate( {backgroundPositionY: "-=10%"} ,250);
+            // $('parallax-container').addClass('trans');
         }, 1000);
     }
 });
