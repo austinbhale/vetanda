@@ -30,9 +30,22 @@ $('#gform').on('submit', function(e) {
     }
 });
 
-$( window ).load(function() {
-    setTimeout(function() {
-        $('#parallax-container').addClass('trans');
-    }, 100);
+var isMobile = false;
+
+$(document).ready(function() {
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {isMobile = true;}
+   
+    if (isMobile) {
+        $('#parallax-container').css("display", "none");
+        $('#parallax-mobile-title').css("display", "block");
+        $('#parallax-mobile').css("display", "block");
+        setTimeout(function() {
+            $('#parallax-img').fadeIn(4000);
+        }, 1000);
+    } else {
+        setTimeout(function() {
+            $('#parallax-container').addClass('trans');
+        }, 1000);
+    }
 });
 

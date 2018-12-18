@@ -77,9 +77,8 @@ nav ul li:hover {
   margin: auto;
 }
  
-.parallax-container {
+#parallax-container {
   position: relative;
-  background-image: url(../images/action.jpg);
   overflow: hidden;
   margin: 0 auto;
   width: 100%; 
@@ -89,11 +88,21 @@ nav ul li:hover {
   background-size: cover;
   line-height: 0;
   height: 100%;
-  color: black;
 
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
+  -webkit-transition: all 2.5s ease-in-out;
+  -moz-transition: all 2.5s ease-in-out;
+  -o-transition: all 2.5s ease-in-out;
   transition: all 2.5s ease-in-out;
+}
+
+.contact {
+  background: url(../images/action.jpg);
+}
+
+.schedule {
+  background: url(../images/schedule.jpg);
 }
 
 .parallax-container .parallax {
@@ -112,5 +121,27 @@ nav ul li:hover {
 
 .trans {
   background-position-y: 100%;
-  /* background-size: inherit; */
+  opacity: 1.0;
+}
+
+#parallax-mobile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  height: 250px;
+  background: linear-gradient(0deg,rgba(250,0,150,0.3),rgba(250,0,150,0.3));
+}
+
+#parallax-mobile-title {
+  display: none;
+}
+
+#parallax-img {
+  display: none;
+}
+
+.no-parallax {
+  position: relative;
+  width: 100%;
+  height: 250px;
 }
