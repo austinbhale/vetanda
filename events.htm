@@ -40,15 +40,15 @@
         <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="about.htm">about us</a></li>
-          <li><a href="">media</a></li>
-          <li><a href="events.htm">events</a></li>
+          <li><a href="media.htm">media</a></li>
+          <li><a href="">events</a></li>
           <li><a href="contact.htm">contact</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
           <li><a href="about.htm">about us</a></li>
-          <li><a href="">media</a></li>
-          <li><a href="events.htm">events</a></li>
+          <li><a href="media.htm">media</a></li>
+          <li><a href="">events</a></li>
           <li><a href="contact.htm">contact</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"
@@ -56,31 +56,47 @@
         >
       </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br /><br />
-        <h1 class="header center purple-text">here's some media</h1>
-        <!-- <div class="row center">
-        <h5 class="header col s12 light">down there - i'll edit style later</h5>
-      </div> -->
-        <div class="row center">
-          <video controls muted loop playsinline class="center-fit">
-            <source src="assets/videos/combine.MOV" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <video controls muted loop playsinline class="center-fit">
-          <source src="assets/videos/vid1.MOV" type="video/mp4">
-            Your browser does not support the video tag.</video> -->
-          <video controls muted loop playsinline class="center-fit">
-            <source src="assets/videos/vid2.MOV" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <br /><br />
-      </div>
+
+    <div
+      id="parallax-container"
+      class="parallax-container valign-wrapper section no-pad-bot events"
+    >
+      <div id="parallax" class="parallax"></div>
+      <h1 class="parallax-title light selectDisable purple-text">
+        events
+      </h1>
     </div>
 
-    <div class="container"><div class="section"></div></div>
+    <div id="parallax-mobile" class="noparallax">
+      <img
+        id="parallax-img"
+        class="no-parallax"
+        src="assets/images/schedule.jpg"
+      />
+    </div>
+
+    <h3 id="parallax-mobile-title" class="light selectDisable center">
+      events
+    </h3>
+
+    <!-- <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center purple-text">here's some scheduling</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">example</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light purple">now</a>
+      </div>
+      <br>
+
+    </div>
+  </div> -->
+
+    <div class="container">
+      <div class="section"><img src="assets/images/duplex.jpg" /></div>
+    </div>
 
     <footer class="page-footer black">
       <div class="container">
@@ -126,5 +142,9 @@
     <script src="materialize/js/materialize.js"></script>
     <script src="materialize/js/init.js"></script>
     <script src="assets/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+    ></script>
   </body>
 </html>

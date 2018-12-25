@@ -1,14 +1,15 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 .icons li {
@@ -23,18 +24,19 @@ html, body {
   color: lightgray;
 }
 
-.icons img, .icons i {
+.icons img,
+.icons i {
   width: 25px;
   height: 24px;
   vertical-align: bottom;
 }
 
 .fixed-top {
-  position:fixed;
-  top:0;
-  right:0;
-  left:0;
-  z-index:1030;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 nav ul li:hover {
@@ -76,12 +78,12 @@ nav ul li:hover {
   height: 100%;
   margin: auto;
 }
- 
+
 #parallax-container {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  width: 100%; 
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +103,7 @@ nav ul li:hover {
   background: url(../images/action.jpg);
 }
 
-.schedule {
+.events {
   background: url(../images/schedule.jpg);
 }
 
@@ -115,20 +117,20 @@ nav ul li:hover {
 }
 
 .parallax-title {
-  position: relative; 
+  position: relative;
   margin: 0 auto;
 }
-
-/* .trans {
-  background-position-y: ;
-} */
 
 #parallax-mobile {
   display: none;
   width: 100%;
   height: 100%;
   height: 250px;
-  background: linear-gradient(0deg,rgba(250,0,150,0.3),rgba(250,0,150,0.3));
+  background: linear-gradient(
+    0deg,
+    rgba(250, 0, 150, 0.3),
+    rgba(250, 0, 150, 0.3)
+  );
 }
 
 #parallax-mobile-title {
@@ -145,36 +147,95 @@ nav ul li:hover {
   height: 250px;
 }
 
-.idx-containers {
+/* Index Page */
+.content,
+.wrapper:before {
+  box-sizing: border-box;
+  display: block;
+  font-size: 4em;
+  padding-top: 0.75em;
+  width: 6em;
+  height: 3em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.content {
+  /* font-weight: bold; */
+  text-align: center;
+  z-index: 1;
+  background: #fff;
+  color: #000;
+  mix-blend-mode: lighten;
+}
+
+#index-banner-home {
   position: relative;
-  height: 400px;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  height: 90%;
+  background: #000;
+  z-index: 1000;
 }
 
-.idx-containers:hover {
-  background-size: 107% 107%;
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  isolation: isolate;
+  position: relative;
+  height: 100vh;
+  padding: 1em;
 }
 
-.about-home {
+.wrapper {
+  clip: rect(auto auto auto auto);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wrapper:before {
+  content: " ";
+  padding: 2em 3.5em;
+  mix-blend-mode: darken;
+}
+
+.one {
   background: url(../images/action.jpg);
   background-size: 100% 100%;
 }
+.one .wrapper:before {
+  background: blue;
+}
 
-.media-home {
+.two {
+  background-image: url(https://source.unsplash.com/1920x1080?nature);
+}
+.two .wrapper:before {
+  background: red;
+}
+
+.three {
   background: url(../images/schedule.jpg);
   background-size: 100% 100%;
 }
-
-.schedule-home {
-  background: url(../images/action.jpg);
-  background-size: 100% 100%;
+.three .wrapper:before {
+  background: green;
 }
 
-.contact-home {
-  background: url(../images/schedule.jpg);
-  background-size: 100% 100%;
+.four {
+  background-image: url(https://source.unsplash.com/1920x1080?nature);
+}
+.four .wrapper:before {
+  background: orange;
 }
 
-
+.five {
+  background-image: url(https://source.unsplash.com/1920x1080?nature);
+}
+.five .wrapper:before {
+  background: orange;
+}
