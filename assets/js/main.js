@@ -1,29 +1,3 @@
-window.onscroll = function() {
-
-  if ($(window).scrollTop() > $("#cont").offset().top) {
-    $(".content").css("visibility", "hidden");
-  } else {
-    $(".content").css("visibility", "visible");
-  }
-
-  var topOffset = $("#five").height() / 2;
-  if ($(window).scrollTop() > $("#five").offset().top - topOffset) {
-    // $("#nav").removeClass("black");
-    // $("#nav").addClass("grey darken-3");
-    $("#ref").html("contact").attr("href", "contact.htm");
-  } else if ($(window).scrollTop() > $("#four").offset().top - topOffset) {
-    $("#ref").html("events").attr("href", "performances.htm");
-  } else if ($(window).scrollTop() > $("#three").offset().top - topOffset) {
-    $("#ref").html("media").attr("href", "media.htm");
-  } else if ($(window).scrollTop() > $("#two").offset().top - topOffset) {
-    $("#ref").html("about").attr("href", "about.htm");
-  } else {
-    $("#ref").html("v").attr("href", "#");
-    // $("#nav").removeClass("grey darken-3");
-    // $("#nav").addClass("black");
-  }
-};
-
 var elementsValid = document.getElementsByClassName("valid");
 var elementsInvalid = document.getElementsByClassName("invalid");
 var valids = false;

@@ -35,7 +35,7 @@
     />
   </head>
   <body>
-    <nav class="black fixed-top" role="navigation">
+    <nav id="nav" class="black fixed-top" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
         <ul class="right hide-on-med-and-down">
@@ -57,30 +57,82 @@
       </div>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br /><br />
-        <h1 class="header center purple-text">here's some media</h1>
-        <!-- <div class="row center">
-        <h5 class="header col s12 light">down there - i'll edit style later</h5>
-      </div> -->
-        <div class="row center">
-          <video controls muted loop playsinline class="center-fit">
-            <source src="assets/videos/combine.MOV" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <video controls muted loop playsinline class="center-fit">
-          <source src="assets/videos/vid1.MOV" type="video/mp4">
-            Your browser does not support the video tag.</video> -->
-          <video controls muted loop playsinline class="center-fit">
-            <source src="assets/videos/vid2.MOV" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <div class="media-ctr">
+        <br /><br /><br />
+        <div class="row-media">
+          <div class="column-media">
+            <video
+              id="vid0"
+              alt="vidtest"
+              src="assets/videos/combine.MOV"
+              controls
+              muted
+              loop
+              playsinline
+              class="center-fit-media"
+            >
+            </video>
+            <video
+              id="vid1"
+              alt="vidtest"
+              src="assets/videos/vid2.MOV"
+              controls
+              muted
+              loop
+              playsinline
+              class="center-fit-media"
+            >
+            </video>
+          </div>
+          <div class="column-media">
+            <img
+              id="img0"
+              alt="hello"
+              src="https://source.unsplash.com/1920x1080?nature"
+            />
+            <img
+              id="img1"
+              alt="hello"
+              src="https://source.unsplash.com/1920x1080?nature"
+            />
+            <img
+              id="img2"
+              alt="hello"
+              src="https://source.unsplash.com/1920x1080?nature"
+            />
+            <img
+              id="img3"
+              alt="hello"
+              src="https://source.unsplash.com/1920x1080?nature"
+            />
+          </div>
         </div>
         <br /><br />
       </div>
     </div>
 
-    <div class="container"><div class="section"></div></div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" style="display: none" />
+
+      <video
+        class="modal-content"
+        id="vid01"
+        controls
+        muted
+        loop
+        playsinline
+        class="center-fit-media" 
+        style="display: none"
+      ></video>
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
 
     <footer class="page-footer black">
       <div class="container">
@@ -126,5 +178,33 @@
     <script src="materialize/js/materialize.js"></script>
     <script src="materialize/js/init.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      $(function() {
+        $(".column-media").click(function(event) {
+          if(event.target.id == "") {return;}
+          var img = document.getElementById("" + event.target.id);
+          $("#myModal").css("display", "block");
+
+          if (event.target.id[0] == "v") {
+            $("#vid01").css("display", "block");
+            document.getElementById("vid01").src = img.src;
+            document.getElementById("caption").innerHTML = "video"
+          } else {
+            ($("#img01").css("display", "block"));
+            document.getElementById("img01").src = img.src;
+            document.getElementById("caption").innerHTML = img.alt;
+          }
+
+          $("#nav").css("display", "none");
+        });
+      });
+
+      document.getElementsByClassName("close")[0].onclick = function() {
+        $("#myModal").css("display", "none");
+        $("#nav").css("display", "block");
+        $("#vid01").css("display", "none");
+        $("#img01").css("display", "none");
+      };
+    </script>
   </body>
 </html>
