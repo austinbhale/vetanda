@@ -234,7 +234,7 @@ section {
 }
 
 .four {
-  background-image: url(https://source.unsplash.com/1920x1080?nature);
+  background-image: url(../images/dancing-dance-people-hip-hop-12312.jpg);
 }
 .four .wrapper:before {
   background: orange;
@@ -267,7 +267,8 @@ section {
 
 .column-about img {
   display: block;
-  width: 60%;
+  width: 50%;
+  /* height: 400px; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
@@ -331,9 +332,9 @@ section {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
-  height: 450px;
+  width: 40%;
+  /* max-width: 700px; */
+  /* max-height: 600px; */
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

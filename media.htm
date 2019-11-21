@@ -1,210 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0"
-    />
-    <title>vetanda</title>
 
-    <!-- CSS  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="materialize/css/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-    <link
-      href="assets/css/style.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-  </head>
-  <body>
-    <nav id="nav" class="black fixed-top" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="about.htm">about us</a></li>
-          <li><a href="">media</a></li>
-          <li><a href="events.htm">events</a></li>
-          <li><a href="contact.htm">contact</a></li>
-        </ul>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>vetanda</title>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="about.htm">about us</a></li>
-          <li><a href="">media</a></li>
-          <li><a href="events.htm">events</a></li>
-          <li><a href="contact.htm">contact</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"
-          ><i class="material-icons">menu</i></a
-        >
-      </div>
-    </nav>
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="media-ctr">
-        <br /><br /><br />
-        <div class="row-media">
-          <div class="column-media">
-            <video
-              id="vid0"
-              alt="vidtest"
-              src="assets/videos/combine.MOV"
-              controls
-              muted
-              loop
-              playsinline
-              class="center-fit-media"
-            >
-            </video>
-            <video
-              id="vid1"
-              alt="vidtest"
-              src="assets/videos/vid2.MOV"
-              controls
-              muted
-              loop
-              playsinline
-              class="center-fit-media"
-            >
-            </video>
-          </div>
-          <div class="column-media">
-            <img
-              id="img0"
-              alt="hello"
-              src="https://source.unsplash.com/1920x1080?nature"
-            />
-            <img
-              id="img1"
-              alt="hello"
-              src="https://source.unsplash.com/1920x1080?nature"
-            />
-            <img
-              id="img2"
-              alt="hello"
-              src="https://source.unsplash.com/1920x1080?nature"
-            />
-            <img
-              id="img3"
-              alt="hello"
-              src="https://source.unsplash.com/1920x1080?nature"
-            />
-          </div>
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav id="nav" class="black fixed-top" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="about.htm">about us</a></li>
+        <li><a href="">media</a></li>
+        <li><a href="events.htm">events</a></li>
+        <li><a href="contact.htm">contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="about.htm">about us</a></li>
+        <li><a href="">media</a></li>
+        <li><a href="events.htm">events</a></li>
+        <li><a href="contact.htm">contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="media-ctr">
+      <br /><br /><br />
+      <div class="row-media">
+        <div class="column-media">
+          <video id="vid0" alt="vidtest" src="assets/videos/combine.MOV" controls muted loop playsinline
+            class="center-fit-media">
+          </video>
+          <img id="img1" alt="hello" src="./assets/images/IMG_0243.jpg" />
+          <img id="img3" alt="hello" src="./assets/images/sydney-headshot.jpg" />
+
         </div>
-        <br /><br />
-      </div>
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01" style="display: none" />
-
-      <video
-        class="modal-content"
-        id="vid01"
-        controls
-        muted
-        loop
-        playsinline
-        class="center-fit-media" 
-        style="display: none"
-      ></video>
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
-    </div>
-
-    <footer class="page-footer black">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Our Motto</h5>
-            <p class="grey-text text-lighten-4">
-              Vetanda Dance Collective blends choreography that is commanding,
-              playful, and alluring to create intimate connections with viewers
-              and provide an entertainment experience that will empower
-              audiences.
-            </p>
-          </div>
-          <div class="col l3 s12 white-text">
-            <h5>Connect</h5>
-            <ul class="icons">
-              <li>
-                <a
-                  target="_blank"
-                  href="http://www.instagram.com/vetandadanceco"
-                >
-                  <img src="assets/icons/ig-logo.png" /> Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:vetandadancecollective@gmail.com?Subject=Vetanda Dance Inquiry"
-                >
-                  <i class="material-icons grey-text">email</i> Mail</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="column-media">
+          <img id="img0" alt="hello" src="./assets/images/IMG_0242.jpg" />
+          <video id="vid1" alt="vidtest" src="assets/videos/vid2.MOV" controls muted loop playsinline
+            class="center-fit-media">
+          </video>
+          <img id="img2" alt="hello" src="./assets/images/IMG_0250.jpg" />
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">Ⓒ 2018 vetanda</div>
+      <br /><br />
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01" style="display: none" />
+
+    <video class="modal-content" id="vid01" controls muted loop playsinline class="center-fit-media"
+      style="display: none"></video>
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Our Motto</h5>
+          <p class="grey-text text-lighten-4">
+            Vetanda Dance Collective blends choreography that is commanding,
+            playful, and alluring to create intimate connections with viewers
+            and provide an entertainment experience that will empower
+            audiences.
+          </p>
+        </div>
+        <div class="col l3 s12 white-text">
+          <h5>Connect</h5>
+          <ul class="icons">
+            <li>
+              <a target="_blank" href="http://www.instagram.com/vetandadanceco">
+                <img src="assets/icons/ig-logo.png" /> Instagram</a>
+            </li>
+            <li>
+              <a href="mailto:vetandadancecollective@gmail.com?Subject=Vetanda Dance Inquiry">
+                <i class="material-icons grey-text">email</i> Mail</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">Ⓒ 2019 vetanda</div>
+    </div>
+  </footer>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="materialize/js/materialize.js"></script>
-    <script src="materialize/js/init.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      $(function() {
-        $(".column-media").click(function(event) {
-          if(event.target.id == "") {return;}
-          var img = document.getElementById("" + event.target.id);
-          $("#myModal").css("display", "block");
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.js"></script>
+  <script src="materialize/js/init.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(function () {
+      $(".column-media").click(function (event) {
+        if (event.target.id == "") {
+          return;
+        }
+        var img = document.getElementById("" + event.target.id);
+        $("#myModal").css("display", "block");
 
-          if (event.target.id[0] == "v") {
-            $("#vid01").css("display", "block");
-            document.getElementById("vid01").src = img.src;
-            document.getElementById("caption").innerHTML = "video"
-          } else {
-            ($("#img01").css("display", "block"));
-            document.getElementById("img01").src = img.src;
-            document.getElementById("caption").innerHTML = img.alt;
-          }
+        if (event.target.id[0] == "v") {
+          $("#vid01").css("display", "block");
+          document.getElementById("vid01").src = img.src;
+          document.getElementById("caption").innerHTML = "video"
+        } else {
+          ($("#img01").css("display", "block"));
+          document.getElementById("img01").src = img.src;
+          document.getElementById("caption").innerHTML = img.alt;
+        }
 
-          $("#nav").css("display", "none");
-        });
+        $("#nav").css("display", "none");
       });
+    });
 
-      document.getElementsByClassName("close")[0].onclick = function() {
-        $("#myModal").css("display", "none");
-        $("#nav").css("display", "block");
-        $("#vid01").css("display", "none");
-        $("#img01").css("display", "none");
-      };
-    </script>
-  </body>
+    document.getElementsByClassName("close")[0].onclick = function () {
+      $("#myModal").css("display", "none");
+      $("#nav").css("display", "block");
+      $("#vid01").css("display", "none");
+      $("#img01").css("display", "none");
+    };
+  </script>
+</body>
+
 </html>
