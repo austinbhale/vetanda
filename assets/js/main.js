@@ -3,12 +3,12 @@ var elementsInvalid = document.getElementsByClassName("invalid");
 var valids = false;
 var invalids = false;
 var received = false;
-$("#gform").on("submit", function(e) {
+$("#gform").on("submit", function (e) {
   elementsValid.length > 2 ? (valids = true) : (valids = false);
   elementsInvalid.length == 0 ? (invalids = true) : (invalids = false);
 
   if (valids && invalids) {
-    $("#gform *").fadeOut(2000, function() {
+    $("#gform *").fadeOut(2000, function () {
       if (!received) {
         $("#gform").prepend("Thanks! We'll be in touch with you soon.");
         received = true;
@@ -21,7 +21,7 @@ $("#gform").on("submit", function(e) {
 
 var isMobile = false;
 
-$(document).ready(function() {
+$(document).ready(function () {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -34,12 +34,14 @@ $(document).ready(function() {
     $("#parallax-container").css("display", "none");
     $("#parallax-mobile-title").css("display", "block");
     $("#parallax-mobile").css("display", "block");
-    setTimeout(function() {
+    setTimeout(function () {
       $("#parallax-img").fadeIn(4000);
     }, 500);
   } else {
-    setTimeout(function() {
-      $("#parallax-container").animate({ backgroundPositionY: "-=10%" }, 250);
+    setTimeout(function () {
+      $("#parallax-container").animate({
+        backgroundPositionY: "-=10%"
+      }, 250);
       // $('parallax-container').addClass('trans');
     }, 1000);
   }
