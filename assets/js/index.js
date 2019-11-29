@@ -15,9 +15,9 @@ window.onscroll = function () {
     } else if ($("#three").length && $(window).scrollTop() > $("#three").offset().top - topOffset) {
       $("#ref").html("media").attr("href", "media.htm");
     } else if ($("#two").length && $(window).scrollTop() > $("#two").offset().top - topOffset) {
-      $("#ref").html("about").attr("href", "about.htm");
+        $("#ref").html("about").attr("href", "about.htm");
     } else {
-      $("#ref").html("v").attr("href", "#");
+      $("#ref").html("about").attr("href", "#");
       // $("#nav").removeClass("grey darken-3");
       // $("#nav").addClass("black");
     }
