@@ -498,14 +498,14 @@ section {
 @media only screen and (max-width: 425px) {
 
   .one {
-    background-size: 150% 100%;
+    background-size: 200% 100%;
     background-image: url(../images/vetanda-dancing.jpeg);
     background-position: 40% 0;
   }
 
   .two {
     background-image: url(../images/erin-sydney-outside.jpeg);
-    background-size: 250% 100%;
+    background-size: 200% 100%;
     background-position: 50% 0;
   }
 
