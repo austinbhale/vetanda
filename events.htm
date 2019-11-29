@@ -1,157 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0"
-    />
-    <title>vetanda</title>
 
-    <!-- CSS  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="materialize/css/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-    <link
-      href="assets/css/style.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-  </head>
-  <body>
-    <nav class="black fixed-top" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="about.htm">about us</a></li>
-          <li><a href="media.htm">media</a></li>
-          <li><a href="">events</a></li>
-          <li><a href="contact.htm">contact</a></li>
-        </ul>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>vetanda</title>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="about.htm">about us</a></li>
-          <li><a href="media.htm">media</a></li>
-          <li><a href="">events</a></li>
-          <li><a href="contact.htm">contact</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"
-          ><i class="material-icons">menu</i></a
-        >
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="black fixed-top" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="about.htm">about us</a></li>
+        <li><a href="media.htm">media</a></li>
+        <li><a href="">events</a></li>
+        <li><a href="contact.htm">contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="about.htm">about us</a></li>
+        <li><a href="media.htm">media</a></li>
+        <li><a href="">events</a></li>
+        <li><a href="contact.htm">contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="parallax-container" class="parallax-container valign-wrapper section no-pad-bot events">
+    <div id="parallax" class="parallax"></div>
+    <h1 class="parallax-title light selectDisable white-text">events</h1>
+  </div>
+
+  <div id="parallax-mobile" class="noparallax">
+    <img id="parallax-img" class="no-parallax" src="assets/images/IMG_4193_Original.jpeg" />
+  </div>
+
+  <h3 id="parallax-mobile-title" class="light selectDisable center">
+    events
+  </h3>
+
+  <div class="container">
+    <div class="center">
+      <video autoplay controls muted loop playsinline id="cont" class="center-fit">
+        <source src="assets/videos/live-performance-reel.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="row event">
+      <h4 class="center">Past performances</h4>
+      <div class="col m4 s12 center">
+          <img src="assets/icons/duplex.jpg" />
+          <!-- <h5>The Duplex Piano Bar</h5> -->
       </div>
-    </nav>
-
-    <div
-      id="parallax-container"
-      class="parallax-container valign-wrapper section no-pad-bot events"
-    >
-      <div id="parallax" class="parallax"></div>
-      <h1 class="parallax-title light selectDisable white-text">events</h1>
+      <div class="col m4 s12 center">
+          <img src="assets/icons/logo-norwood_white.png" />
+          <!-- <h5>RSVP Show at Norwood</h5> -->
+      </div>
+      <div class="col m4 s12 center">
+          <img src="assets/icons/coney_island.png" />
+          <!-- <h5>Coney Island Baby</h5> -->
+      </div>
     </div>
+  </div>
 
-    <div id="parallax-mobile" class="noparallax">
-      <img
-        id="parallax-img"
-        class="no-parallax"
-        src="assets/images/schedule.jpg"
-      />
-    </div>
-
-    <h3 id="parallax-mobile-title" class="light selectDisable center">
-      events
-    </h3>
-
-    <!-- <div class="section no-pad-bot" id="index-banner">
+  <footer class="page-footer">
     <div class="container">
-      <br><br>
-      <h1 class="header center purple-text">here's some scheduling</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">example</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light purple">now</a>
-      </div>
-      <br>
-
-    </div>
-  </div> -->
-
-    <div class="container">
-      <div class="section event">
-        <img src="assets/images/duplex.jpg" />
-        <h5>The Duplex Piano Bar | January 31, 2019</h5>
-        <p>
-          Vetanda Dance Collective will be officially performing in the
-          January Soirée at the Duplex on 1/31! Come out and enjoy a night of
-          performances from a collection of NYC artists. Can’t wait to share
-          what we’ve been working on these past few months!
-        </p>
-      </div>
-    </div>
-
-    <footer class="page-footer black">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Our Motto</h5>
-            <p class="grey-text text-lighten-4">
-              Vetanda Dance Collective blends choreography that is commanding,
-              playful, and alluring to create intimate connections with viewers
-              and provide an entertainment experience that will empower
-              audiences.
-            </p>
-          </div>
-          <div class="col l3 s12 white-text">
-            <h5>Connect</h5>
-            <ul class="icons">
-              <li>
-                <a
-                  target="_blank"
-                  href="http://www.instagram.com/vetandadanceco"
-                >
-                  <img src="assets/icons/ig-logo.png" /> Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:vetandadancecollective@gmail.com?Subject=Vetanda Dance Inquiry"
-                >
-                  <i class="material-icons grey-text">email</i> Mail</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="row">
+        <div class="col l3 s12 white-text">
+          <h5>Connect</h5>
+          <ul class="icons">
+            <li>
+              <a target="_blank" href="http://www.instagram.com/vetandadanceco">
+                <img src="assets/icons/ig-logo.png" /> Instagram</a>
+            </li>
+            <li>
+              <a href="mailto:vetandadancecollective@gmail.com?Subject=Vetanda Dance Inquiry">
+                <i class="material-icons grey-text">email</i> Mail</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">Ⓒ 2019 vetanda</div>
-      </div>
-    </footer>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">Ⓒ 2019 vetanda</div>
+    </div>
+  </footer>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="materialize/js/materialize.js"></script>
-    <script src="materialize/js/init.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-    ></script>
-  </body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.js"></script>
+  <script src="materialize/js/init.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+</body>
+
 </html>

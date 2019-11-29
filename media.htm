@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" about="screen,projection" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" about="screen,projection" />
 </head>
 
 <body>
-  <nav id="nav" class="black fixed-top" role="navigation">
+  <nav class="black fixed-top" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
       <ul class="right hide-on-med-and-down">
@@ -34,57 +34,36 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="media-ctr">
-      <br /><br /><br />
-      <div class="row-media">
-        <div class="column-media">
-          <video id="vid0" alt="vidtest" src="assets/videos/combine.MOV" controls muted loop playsinline
-            class="center-fit-media">
-          </video>
-          <img id="img1" alt="hello" src="./assets/images/IMG_0243.jpg" />
-          <img id="img3" alt="hello" src="./assets/images/sydney-headshot.jpg" />
 
-        </div>
-        <div class="column-media">
-          <img id="img0" alt="hello" src="./assets/images/IMG_0242.jpg" />
-          <video id="vid1" alt="vidtest" src="assets/videos/vid2.MOV" controls muted loop playsinline
-            class="center-fit-media">
-          </video>
-          <img id="img2" alt="hello" src="./assets/images/IMG_0250.jpg" />
-        </div>
+  <div class="container">
+    <br /><br /><br />
+    <div class="row media-row">
+      <div class="col s12 center">
+          <video autoplay controls loop playsinline class="center-fit">
+              <source src="assets/videos/vetanda-promo.MOV" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
       </div>
-      <br /><br />
+    </div>
+    <div class="row media-row">
+      <div class="col m6 s12 center">
+          <video controls loop playsinline class="center-fit">
+              <source src="assets/videos/vid2.MOV" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+      </div>
+      <div class="col m6 s12 center">
+          <video controls loop playsinline class="center-fit">
+              <source src="assets/videos/combine.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+      </div>
     </div>
   </div>
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
-
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01" style="display: none" />
-
-    <video class="modal-content" id="vid01" controls muted loop playsinline class="center-fit-media"
-      style="display: none"></video>
-
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
-  </div>
-
-  <footer class="page-footer black" id="footer">
+  <footer class="page-footer black">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Our Motto</h5>
-          <p class="grey-text text-lighten-4">
-            Vetanda Dance Collective blends choreography that is commanding,
-            playful, and alluring to create intimate connections with viewers
-            and provide an entertainment experience that will empower
-            audiences.
-          </p>
-        </div>
         <div class="col l3 s12 white-text">
           <h5>Connect</h5>
           <ul class="icons">
@@ -110,7 +89,6 @@
   <script src="materialize/js/materialize.js"></script>
   <script src="materialize/js/init.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/media.js"></script>
 </body>
 
 </html>

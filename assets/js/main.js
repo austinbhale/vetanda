@@ -34,6 +34,7 @@ $(document).ready(function () {
     $("#parallax-container").css("display", "none");
     $("#parallax-mobile-title").css("display", "block");
     $("#parallax-mobile").css("display", "block");
+    $("#cont").css("margin", "0");
     setTimeout(function () {
       $("#parallax-img").fadeIn(4000);
     }, 500);
