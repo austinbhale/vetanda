@@ -1,2 +1,2 @@
-# vetanda
-vetanda company website
+# vetanda dance collective
+![vetanda logo](./assets/images/vetanda.jpeg)
