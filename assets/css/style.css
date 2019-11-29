@@ -3,6 +3,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Raleway", sans-serif;
+  background-color: black;
+  color: rgb(255, 255, 255, 0.8);
 }
 
 .icon-block {
@@ -107,11 +109,11 @@ nav ul li:hover {
 }
 
 .contact {
-  background: url(../images/action.jpg);
+  background: url(../images/IMG_4193_Original.jpeg);
 }
 
 .events {
-  background: url(../images/schedule.jpg);
+  background: url(../images/IMG_4193_Original.jpeg);
 }
 
 .parallax-container .parallax {
@@ -134,9 +136,12 @@ nav ul li:hover {
   width: 100%;
   height: 100%;
   height: 250px;
-  background: linear-gradient(0deg,
+  /* background: linear-gradient(0deg,
       rgba(250, 0, 150, 0.3),
-      rgba(250, 0, 150, 0.3));
+      rgba(250, 0, 150, 0.3)); */
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1));
 }
 
 #parallax-mobile-title {
@@ -213,12 +218,14 @@ section {
 .one {
   /* background: url(../images/action.jpg);
   background-size: 100% 100%; */
-  background-size: 100% 100%;
-  background-image: url(../images/action.jpg);
+  background-size: 50% 100%;
+  background-image: url(../images/IMG_0051.jpeg), url(../images/IMG_0242.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
 }
 
 .one .wrapper:before {
-  background: blue;
+  background: red;
 }
 
 .two {
@@ -227,7 +234,7 @@ section {
 }
 
 .two .wrapper:before {
-  background: red;
+  background: purple;
 }
 
 .three {
@@ -237,7 +244,7 @@ section {
 }
 
 .three .wrapper:before {
-  background: purple;
+  background: black;
 }
 
 .four {
@@ -246,7 +253,7 @@ section {
 }
 
 .four .wrapper:before {
-  background: orange;
+  background: red;
 }
 
 .five {
@@ -255,13 +262,14 @@ section {
 }
 
 .five .wrapper:before {
-  background: green;
+  background: purple;
 }
 
 /* About Page */
 .about-ctr {
   margin-right: 2.5%;
   margin-left: 2.5%;
+  padding: 0 25px;
 }
 
 .row-about {
@@ -285,7 +293,7 @@ section {
   margin-top: 8px;
 }
 
-/* Media Page */
+/* About Page */
 .media-ctr {
   margin-right: 2.5%;
   margin-left: 2.5%;
@@ -402,9 +410,24 @@ section {
   cursor: pointer;
 }
 
+.event {
+  margin-bottom: 80px;
+}
+
+.event h4 {
+  margin: 40px 0;
+}
+
+.event .col {
+  margin-bottom: 40px;
+}
+
 .event img {
   display: block;
-  width: 20%;
+  width: 50%;
+  /* height: 75px; */
+  position: relative;
+  margin: 0 auto;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -430,4 +453,36 @@ section {
     width: 50%;
     margin: 0 auto;
   }
+
+  .name {
+    font-size: 1.2em;
+  }
+}
+
+.about-desc {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.page-footer {
+  background-color: #313336 !important;
+  z-index: 0 !important;
+}
+
+hr {
+  color: #313336;
+  background-color: #313336;
+  border-color: rgb(255, 255, 255, 0.5);
+}
+
+#submit-btn {
+  background-color: #313336;
+}
+
+#cont {
+  margin: 30px 0;
+}
+
+.media-row .col {
+  margin-bottom: 40px;
 }

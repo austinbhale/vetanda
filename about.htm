@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" about="screen,projection" />
-  <link href="assets/css/style.css" type="text/css" rel="stylesheet" about="screen,projection" />
+  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-  <nav class="black fixed-top" role="navigation">
+  <nav id="nav" class="black fixed-top" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.htm" class="brand-logo">vetanda</a>
       <ul class="right hide-on-med-and-down">
@@ -34,100 +34,98 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
   <div class="section no-pad-bot" id="index-banner">
-    <div class="about-ctr">
-      <br /><br />
-      <div>
-        <h2>About Us</h2>
-        <hr>
-        <p>Vetanda Dance Collective is an entertainment company comprised of dancers residing throughout the New York
-          City area. With emphasis on creating an immersive experience, Vetanda’s jazz inspired movement puts a
-          contemporary twist on conventional cabaret style performances. Vetanda aims to continue challenging and
-          exploring the role of dance in nightlife settings to further enhance the audience experience.
-
-          Since it’s debut, Vetanda has performed at a range of venues around Manhattan, such as The Norwood Club, The
-          Duplex, and Coney Island Baby. They have also been featured in music videos by musical artists Diana Bidèa and
-          Downaman.</p>
-      </div>
-      <div class="row-about">
-        <div class="column-about">
-          <img id="erin" src="./assets/images/erin-headshot.jpg" />
-          <h4>
-            Erin Hicks
-          </h4>
-          <p>
-            Short bio here
-          </p>
+      <div class="about-ctr">
+        <br><br>
+          <h2>about us</h2>
+          <hr>
+          <p class="about-desc">Vetanda Dance Collective is an entertainment company comprised of dancers residing throughout the New York
+            City area. With emphasis on creating an immersive experience, Vetanda’s jazz inspired movement puts a
+            contemporary twist on conventional cabaret style performances. Vetanda aims to continue challenging and
+            exploring the role of dance in nightlife settings to further enhance the audience experience.
+  
+            Since it’s debut, Vetanda has performed at a range of venues around Manhattan, such as The Norwood Club, The
+            Duplex, and Coney Island Baby. They have also been featured in music videos by musical artists Diana Bidèa and
+            Downaman.</p>
         </div>
-        <div class="column-about">
-          <img id="sydney" src="./assets/images/syd.jpg" />
-          <h4>
-            Sydney Hale
-          </h4>
-          <p>
-            Short bio here
-          </p>
+    <div class="media-ctr">
+      <div class="row-media">
+        <div class="column-media">
+          <!-- <video id="vid0" alt="vidtest" src="assets/videos/combine.MOV" controls muted loop playsinline
+            class="center-fit-media">
+          </video> -->
+          <img id="sydney" alt="" src="./assets/images/sydney-headshot.jpg" />
+          <h5 class="center name">Sydney Hale</h5>
+          <img id="aleksandra" alt="" src="./assets/images/IMG_0243.jpg" />
+          <h5 class="center name">Aleksandra Wikiera</h5>
+          <img id="anna" alt="" src="./assets/images/IMG_0250.jpg" />
+          <h5 class="center name">Anna Pennell</h5>
+        </div>
+        <div class="column-media">
+          <img id="erin" alt="" src="./assets/images/erin-headshot.jpg" />
+          <h5 class="center name">Erin Hicks</h5>
+          <img id="neysha" alt="" src="./assets/images/IMG_0242.jpg" />
+          <h5 class="center name">Neysha Merced</h5>
+          <!-- <video id="vid1" alt="vidtest" src="assets/videos/vid2.MOV" controls muted loop playsinline
+            class="center-fit-media">
+          </video> -->
         </div>
       </div>
       <br /><br />
     </div>
-
-    <!-- <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br /><br />
-        <h1 class="header center purple-text">learn about us</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">dance team about info</h5>
-        </div>
-        <div class="row center">
-           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light purple">now</a> 
-        </div>
-        <br /><br />
-      </div> -->
   </div>
 
-  <div class="container">
-    <div class="section"></div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01" style="display: none" />
+
+    <video class="modal-content" id="vid01" controls muted loop playsinline class="center-fit-media"
+      style="display: none"></video>
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
   </div>
 
   <footer class="page-footer black">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Our Motto</h5>
-          <p class="grey-text text-lighten-4">
-            Vetanda Dance Collective blends choreography that is commanding,
-            playful, and alluring to create intimate connections with viewers
-            and provide an entertainment experience that will empower
-            audiences.
-          </p>
-        </div>
-        <div class="col l3 s12 white-text">
-          <h5>Connect</h5>
-          <ul class="icons">
-            <li>
-              <a target="_blank" href="http://www.instagram.com/vetandadanceco">
-                <img src="assets/icons/ig-logo.png" /> Instagram</a>
-            </li>
-            <li>
-              <a href="mailto:vetandadancecollective@gmail.com?Subject=Vetanda Dance Inquiry">
-                <i class="material-icons grey-text">email</i> Mail</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col l3 s12 white-text">
+            <h5>Connect</h5>
+            <ul class="icons">
+              <li>
+                <a
+                  target="_blank"
+                  href="http://www.instagram.com/vetandadanceco"
+                >
+                  <img src="assets/icons/ig-logo.png" /> Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:vetandadancecollective@gmail.com?Subject=Vetanda Dance Inquiry"
+                >
+                  <i class="material-icons grey-text">email</i> Mail</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">Ⓒ 2019 vetanda</div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">Ⓒ 2019 vetanda</div>
+      </div>
+    </footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="materialize/js/materialize.js"></script>
   <script src="materialize/js/init.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/about.js"></script>
 </body>
 
 </html>
