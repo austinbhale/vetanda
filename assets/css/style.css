@@ -113,7 +113,7 @@ nav ul li:hover {
 }
 
 .events {
-  background: url(../images/erin-sydney.jpeg);
+  background: url(../images/main.JPG);
 }
 
 .parallax-container .parallax {
@@ -497,16 +497,16 @@ section {
 
 @media only screen and (max-width: 425px) {
 
-  .two {
-    background-image: url(../images/main.JPG);
-    background-size: 400% 100%;
-    background-position: 40% 0;
-  }
-
   .one {
     background-size: 200% 100%;
     background-image: url(../images/vetanda-dancing.jpeg);
     background-position: 40% 0;
+  }
+
+  .two {
+    background-image: url(../images/erin-sydney-outside.jpeg);
+    background-size: 250% 100%;
+    background-position: 50% 0;
   }
 
   .three {
