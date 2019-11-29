@@ -484,15 +484,15 @@ section {
 
   .four {
     background-size: 150% 100%;
-    background-image: url(../images/erin-back.JPEG);
     background-position: 50% 0;
+    background-image: url(../images/erin-sydney-home.jpeg);
   }
 
   .five {
     background-size: 150% 100%;
+    background-image: url(../images/bar-red.jpg);
     background-position: 50% 0;
   }
-
 }
 
 @media only screen and (max-width: 425px) {
@@ -515,16 +515,14 @@ section {
   }
 
   .four {
-    background-size: 100% 100%;
-    background-image: url(../images/combine-poster.jpg);
-    background-position: 50% 0;
-  }
-
-  .five {
     background-size: 325% 100%;
     background-position: 55% 0;
   }
 
+  .five {
+    background-size: 300% 100%;
+    background-position: 20% 0;
+  }
 }
 
 .about-desc {
