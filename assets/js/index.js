@@ -17,7 +17,7 @@ window.onscroll = function () {
     } else if ($("#two").length && $(window).scrollTop() > $("#two").offset().top - topOffset) {
         $("#ref").html("about").attr("href", "about.htm");
     } else {
-      $("#ref").html("about").attr("href", "#");
+      $("#ref").html("vetanda").attr("href", "#");
       // $("#nav").removeClass("grey darken-3");
       // $("#nav").addClass("black");
     }
