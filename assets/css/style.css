@@ -440,12 +440,15 @@ section {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
+  .media-row h5 {
+    font-size: 1.2em;
+  }
+
   .modal-content {
     width: 100%;
   }
 
   section {
-    /* width: 50%; */
     background-size: auto;
   }
 
