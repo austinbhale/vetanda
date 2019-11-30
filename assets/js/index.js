@@ -9,13 +9,13 @@ window.onscroll = function () {
     if ($("#five").length && $(window).scrollTop() > $("#five").offset().top - topOffset) {
       // $("#nav").removeClass("black");
       // $("#nav").addClass("grey darken-3");
-      $("#ref").html("contact").attr("href", "contact.htm");
+      $("#ref").html("contact").attr("href", "contact");
     } else if ($("#four").length && $(window).scrollTop() > $("#four").offset().top - topOffset) {
-      $("#ref").html("events").attr("href", "events.htm");
+      $("#ref").html("events").attr("href", "events");
     } else if ($("#three").length && $(window).scrollTop() > $("#three").offset().top - topOffset) {
-      $("#ref").html("media").attr("href", "media.htm");
+      $("#ref").html("media").attr("href", "media");
     } else if ($("#two").length && $(window).scrollTop() > $("#two").offset().top - topOffset) {
-        $("#ref").html("about").attr("href", "about.htm");
+        $("#ref").html("about").attr("href", "about");
     } else {
       $("#ref").html("vetanda").attr("href", "#");
       // $("#nav").removeClass("grey darken-3");
