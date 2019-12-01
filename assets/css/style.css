@@ -501,14 +501,14 @@ section {
 @media only screen and (max-width: 425px) {
 
   .one {
-    background-size: 200% 100%;
+    background-size: 190% 100%;
     background-image: url(../images/vetanda-dancing.jpeg);
     background-position: 40% 0;
   }
 
   .two {
     background-image: url(../images/erin-sydney-outside.jpeg);
-    background-size: 200% 100%;
+    background-size: 190% 100%;
     background-position: 50% 0;
   }
 
@@ -518,13 +518,28 @@ section {
   }
 
   .four {
-    background-size: 325% 100%;
+    background-size: 315% 100%;
     background-position: 55% 0;
   }
 
   .five {
     background-size: 300% 100%;
     background-position: 20% 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .one {
+    background-size: 175% 100%;
+  }
+  
+  .two {
+    background-size: 175% 100%;
+  }
+
+  .four {
+    background-size: 300% 100%;
+    background-position: 55% 0;
   }
 }
 
