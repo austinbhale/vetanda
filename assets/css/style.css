@@ -220,12 +220,11 @@ section {
 }
 
 .one {
-  /* background: url(../images/action.jpg);
-  background-size: 100% 100%; */
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: url(../images/main.JPG);
   /* z-index: 1020; */
-  background-position: 0 0;
 }
 
 .one .wrapper:before {
@@ -233,10 +232,10 @@ section {
 }
 
 .two {
-  background-size: 50% 100%;
-  background-image: url(../images/erin-sydney-outside.jpeg), url(../images/vetanda-dancing.jpeg);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  background-image: url(../images/collage-home1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .two .wrapper:before {
@@ -244,9 +243,10 @@ section {
 }
 
 .three {
-  /* background: url(../images/schedule.jpg);*/
-  background-size: 100% 100%;
   background-image: url(../images/vetanda-promo-moment.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .three .wrapper:before {
@@ -254,10 +254,10 @@ section {
 }
 
 .four {
-  background-size: 50% 100%;
-  background-image: url(../images/sydney-rail.JPG), url(../images/erin-back.JPEG);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  background-image: url(../images/collage-home2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .four .wrapper:before {
@@ -265,7 +265,9 @@ section {
 }
 
 .five {
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: url(../images/erin-sydney-home.jpeg);
 }
 
@@ -439,7 +441,7 @@ section {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
   .media-row h5 {
     font-size: 1.2em;
   }
@@ -469,77 +471,35 @@ section {
     font-size: 1.2em;
   }
 
-  .one {
-    background-size: 150% 100%;
-    background-position: 50% 0;
-  }
-
   .two {
-    background-size: 150% 100%;
     background-image: url(../images/vetanda-dancing.jpeg);
-    background-position: 60% 0;
-  }
-
-  .three {
-    background-size: 200% 100%;
-    background-position: 30% 0;
   }
 
   .four {
-    background-size: 150% 100%;
-    background-position: 50% 0;
     background-image: url(../images/erin-sydney-home.jpeg);
   }
 
   .five {
-    background-size: 150% 100%;
     background-image: url(../images/bar-red.jpg);
-    background-position: 50% 0;
   }
 }
 
 @media only screen and (max-width: 425px) {
-
   .one {
-    background-size: 190% 100%;
     background-image: url(../images/vetanda-dancing.jpeg);
     background-position: 40% 0;
   }
 
   .two {
     background-image: url(../images/erin-sydney-outside.jpeg);
-    background-size: 190% 100%;
-    background-position: 50% 0;
-  }
-
-  .three {
-    background-size: 300% 100%;
-    background-position: 70% 0;
   }
 
   .four {
-    background-size: 315% 100%;
     background-position: 55% 0;
   }
 
   .five {
-    background-size: 300% 100%;
     background-position: 20% 0;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .one {
-    background-size: 175% 100%;
-  }
-  
-  .two {
-    background-size: 175% 100%;
-  }
-
-  .four {
-    background-size: 300% 100%;
-    background-position: 55% 0;
   }
 }
 
